@@ -1,41 +1,42 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.center{
+.center {
     display: flex;
     flex-wrap: wrap;
     max-width: 1280px;
-    margin: 0 auto;
-    padding:0 2%;  
+    margin-left: 400px;
+    /*
+        padding:0 2%;  */
 }
 
-html, body{
+html, body {
     height: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
 }
 
-.header{
+.header {
     height: 200px;
     padding: 20px 0;
 }
 
-.logo{
+.logo {
     width: 50%;
 
 }
 
-.menu{
+.menu {
     padding: 30px;
     width: 50%;
     text-align: right;
 }
 
-.menu a{
+.menu a {
     color: black;
     text-decoration: none;
     font-weight: bold;
@@ -43,44 +44,53 @@ html, body{
 
 }
 
-section.sobre{
-    height: calc(100%-200px);
+section.sobre {
+    height: calc(100% - 200px);
     position: relative;
 
 }
 
-.extras{
+.extras {
     display: flex;
     width: 100%;
 
-}   
+}
 
-.social-media{
+.social-media {
     position: absolute;
-    right: 1px;
-    top: 200px; 
+    right: -100px;
+    top: 200px;
     z-index: 3;
+    max-width: 205px;
+    overflow: hidden;
 }
 
-.social-media img{
-    display: block;
-    width: 180px;
+.social-media img {
+    position: relative;
+    width: 100px;
     margin: 20px 0;
+    overflow: hidden;
 }
 
-.sobre{
+.social-media img:hover {
+    width: 101px;
+    overflow: hidden;
+    margin: 15px 0
+}
+
+.sobre {
     display: flex;
 }
 
-.texto-sobre{
-    margin-top:100px;
+.texto-sobre {
+    margin-top: 100px;
 }
 
-.texto-sobre h1{
+.texto-sobre h1 {
     font-size: 50px;
 }
 
-.texto-sobre p	{
+.texto-sobre p {
     margin: 20px 0;
     color: black;
     font-size: 14px;
@@ -88,9 +98,9 @@ section.sobre{
     max-width: 800px;
 }
 
-.texto-sobre button{
+.texto-sobre button {
     border: 0;
-    background-color:rgb(126, 6, 6);
+    background-color: rgb(126, 6, 6);
     color: white;
     border-radius: 10px;
     width: 100px;
@@ -99,41 +109,41 @@ section.sobre{
 
 }
 
-.logo img{
+.logo img {
     height: 150px;
     width: 150px;
 }
 
-.circulo{
-    position:absolute;
+.circulo {
+    position: absolute;
     bottom: -580px;
     right: -420px;
     width: 1050px;
-    height:1050px;
+    height: 1050px;
     border-radius: 50%;
     background-color: rgb(126, 6, 6);
     z-index: 1;
 }
 
 
-.extras img{
-    justify-self:flex-start;
+.extras img {
+    justify-self: flex-start;
     height: 570px;
     width: 570px;
-     z-index: 2;
+    z-index: 2;
 }
 
-.extras social-media{
-    display:flex ;
+.extras social-media {
+    display: flex;
     width: 20px;
     margin: 20px 0;
 
 }
 
-.pizza-grande{
+.pizza-grande {
     height: 530px;
     width: 530px;
     z-index: 2;
-    margin-right: 300px;
-    margin-top: 70px;
+    margin-right: 180px;
+    margin-top: 200px;
 }
